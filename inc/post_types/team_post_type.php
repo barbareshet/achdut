@@ -57,5 +57,5 @@ function member_post_type() {
     );
     register_post_type( 'members', $args );
 }
-add_action( 'init', 'members_post_type', 0 );
+add_action( 'init', 'member_post_type', 0 );
 

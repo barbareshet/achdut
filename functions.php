@@ -216,3 +216,12 @@ function themeInit()
 }
 
 themeInit();
+
+/*
+ *
+ * Require Post Types
+ */
+require_once (get_template_directory() . '/inc/post_types/ceremonies_post_type.php');
+require_once (get_template_directory() . '/inc/post_types/events_post_type.php');
+require_once (get_template_directory() . '/inc/post_types/team_post_type.php');
+require_once (get_template_directory() . '/inc/post_types/video_post_type.php');

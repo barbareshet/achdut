@@ -1,11 +1,11 @@
 {
-    "key": "group_587c5622ee3e9",
-    "title": "Testimonials",
+    "key": "group_5918b064986b1",
+    "title": "member",
     "fields": [
         {
-            "key": "field_587c5631ab9bb",
-            "label": "testimonial name",
-            "name": "testimonial_name",
+            "key": "field_5918b0856d70d",
+            "label": "member name",
+            "name": "member_name",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,9 +24,30 @@
             "disabled": 0
         },
         {
-            "key": "field_587c563eab9bc",
-            "label": "testimonial content",
-            "name": "testimonial_content",
+            "key": "field_5918b0906d70e",
+            "label": "member position",
+            "name": "member_position",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5918b09c6d70f",
+            "label": "member desc",
+            "name": "member_desc",
             "type": "textarea",
             "instructions": "",
             "required": 0,
@@ -50,7 +71,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "testimonials"
+                "value": "members"
             }
         ]
     ],
@@ -59,8 +80,21 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1484544236
+    "modified": 1494790327
 }
