@@ -105,6 +105,7 @@ add_action( 'widgets_init', 'achdut_widgets_init' );
  * Enqueue scripts and styles.
  */
 function achdut_scripts() {
+	wp_enqueue_style('achdut-style-normalize', get_stylesheet_directory_uri() .'/assets/css/main.css', 'all', microtime());
 	wp_enqueue_style('achdut-style-bs', get_stylesheet_directory_uri() .'/assets/css/bootstrap.min.css', 'all', microtime());
 	wp_enqueue_style('achdut-style-slick', get_stylesheet_directory_uri() .'/assets/js/slick-carousel/slick/slick.css', 'all', microtime());
 	wp_enqueue_style('achdut-style-slick-theme', get_stylesheet_directory_uri() .'/assets/js/slick-carousel/slick/slick-theme.css', 'all', microtime());
