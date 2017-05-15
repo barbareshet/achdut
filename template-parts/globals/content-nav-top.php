@@ -1,7 +1,8 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 5/12/2017
- * Time: 11:25 AM
- */
+<?php wp_nav_menu(
+		array(
+			'theme_location' => 'primary',
+			'menu_id' => 'primary-menu',
+			'menu_class' => 'nav navmenu-nav'
+		)
+	);
+?>

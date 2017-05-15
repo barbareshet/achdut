@@ -58,6 +58,14 @@ function achdut_setup() {
 		'gallery',
 		'caption',
 	) );
+	/*
+         * Enable support for Post Formats.
+         * See https://developer.wordpress.org/themes/functionality/post-formats/
+         */
+	add_theme_support('post-formats', array());
+//	add_image_size('hero-image', 1920, 500, true);
+	add_image_size('post-main', 550, 150, true);
+
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'achdut_custom_background_args', array(

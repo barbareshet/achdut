@@ -57,6 +57,7 @@
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <?php if(is_front_page() ):?>
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">main</a></li>
                         <li><a href="#about">about</a></li>
@@ -65,6 +66,11 @@
                         <li><a href="#blog">blog</a></li>
                         <li><a href="#contact">contact</a></li>
                     </ul>
+                    <?php else: ?>
+
+                        <?php get_template_part('template-parts/globals/content', 'nav-top');?>
+
+                    <?php endif;?>
                 </div>
             </div>
 		</nav><!-- #site-navigation -->

@@ -15,7 +15,7 @@
  */
 
 get_header(); ?>
-<?php get_template_part('template-parts/content', 'hero');?>
+<?php get_template_part('template-parts/globals/content', 'hero');?>
 	<div id="primary" class="content-area ">
 		<main id="main" class="site-main container" role="main">
             <div class="col-md-8 col-md-offset-2 col-sm-12 text-center section-title-wrap">
