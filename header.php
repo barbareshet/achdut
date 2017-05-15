@@ -53,19 +53,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Brand</a>
+                    <a class="navbar-brand" href="<?php home_url('/');?>">Brand</a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <?php if(is_front_page() ):?>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">main</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#activities">activities</a></li>
-                        <li><a href="#gallery">gallery</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#contact">contact</a></li>
-                    </ul>
+	                    <?php wp_nav_menu(
+		                    array(
+			                    'theme_location' => 'onepage',
+			                    'menu_id' => 'onepage-menu',
+			                    'menu_class' => 'nav navbar-nav nav-menu'
+		                    )
+	                    );
+	                    ?>
                     <?php else: ?>
 
                         <?php get_template_part('template-parts/globals/content', 'nav-top');?>

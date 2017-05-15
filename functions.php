@@ -44,7 +44,8 @@ function achdut_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', 'achdut' ),
+		'primary' => esc_html__( 'Primary', 'achdut' ),
+		'onepage'=> esc_html__('HomePage', 'achdut')
 	) );
 
 	/*

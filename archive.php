@@ -7,10 +7,13 @@
  * @package achdut-israel
  */
 
-get_header(); ?>
+get_header();
+get_template_part('template-parts/globals/content', 'hero');
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+?>
+
+	<div id="primary" class="content-area container">
+		<main id="main" class="site-main row" role="main">
 
 		<?php
 		if ( have_posts() ) : ?>

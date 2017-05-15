@@ -240,6 +240,11 @@
                 }
             }
         });
+
+    //Add Active Class To Main menu item
+        $('li.current_page_item').addClass('active');
+
+
 })(jQuery);
 
 
