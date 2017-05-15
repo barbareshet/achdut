@@ -138,32 +138,39 @@ header #top-bar {
 #activities .event .thumbnail:hover {
     background: #ddd; }
 
-#events-option-2 .inner-row {
+#events-option-2 .inner-row,
+#events .inner-row{
     margin-top: 15px;
     padding-top: 15px; }
 
-#events-option-2 .event-date .date {
+#events-option-2 .event-date .date,
+#events .event-date .date{
     font-size: 4em;
     font-weight: bold; }
 
-#events-option-2 .event-date .month {
+#events-option-2 .event-date .month,
+#events .event-date .month{
     display: block;
     position: absolute;
     top: 18px;
     left: 85px; }
 
-#events-option-2 .event-info .event-title {
+#events-option-2 .event-info .event-title,
+#events .event-info .event-title{
     font-weight: 600;
     letter-spacing: 2px;
     font-size: 2.3rem; }
 
-#events-option-2 .event-readmore {
+#events-option-2 .event-readmore,
+#events .event-readmore{
     text-align: center; }
 
-#events-option-2 .event-readmore a.btn-readmore {
+#events-option-2 .event-readmore a.btn-readmore,
+#events .event-readmore a.btn-readmore{
     margin-top: 25px; }
 
-#events-option-2 .event-divider {
+#events-option-2 .event-divider,
+#events .event-divider{
     text-align: center;
     width: 75%; }
 

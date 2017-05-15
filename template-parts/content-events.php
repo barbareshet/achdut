@@ -18,6 +18,8 @@ $eclasses = array(
     $e_class
 );
 ?>
+<?php if( !is_single()) :?>
+
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($eclasses); ?>>
     <div class="col-md-3 col-sm-12 event-date">
@@ -34,8 +36,39 @@ $eclasses = array(
         </div><!-- /.event-excerpt -->
     </div><!-- /.col-md-6 col-sm-12 event-info -->
     <div class="col-md-3 col-sm-12 event-readmore">
-        <a href="" class="btn btn-default btn-readmore">See More Info</a>
+        <a href="<?php the_permalink();?>" class="btn btn-default btn-readmore">See More Info</a>
     </div>
     <!-- /.col-md-3 col-sm-12 event-readmore -->
 </article><!-- #post-## -->
 <hr class="divider event-divider">
+
+<?php else:?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <header class="entry-header">
+			<?php
+
+				the_title( '<h1 class="entry-title">', '</h1>' );
+
+
+			if ( 'post' === get_post_type() ) : ?>
+                <div class="entry-meta">
+					<?php achdut_posted_on(); ?>
+                </div><!-- .entry-meta -->
+				<?php
+			endif; ?>
+        </header><!-- .entry-header -->
+
+        <div class="entry-content">
+			<?php
+			the_content( );
+			?>
+        </div><!-- .entry-content -->
+
+        <footer class="entry-footer">
+			<?php achdut_entry_footer(); ?>
+        </footer><!-- .entry-footer -->
+    </article><!-- #post-## -->
+
+
+
+<?php endif;

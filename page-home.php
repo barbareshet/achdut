@@ -15,19 +15,23 @@
  */
 
 get_header(); ?>
-<?php get_template_part('template-parts/content', 'hp-hero');?>
+<?php get_template_part('template-parts/home/content-hp', 'hero');?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php
 			while ( have_posts() ) : the_post();
 
-				get_template_part( 'template-parts/content', 'home' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+                get_template_part('template-parts/home/content-hp', 'about');
+                get_template_part('template-parts/home/content-hp', 'heritage');
+                get_template_part('template-parts/home/content-hp', 'breaker');
+                get_template_part('template-parts/home/content-hp', 'activities');
+                get_template_part('template-parts/home/content-hp', 'events');
+                get_template_part('template-parts/home/content-hp', 'breaker');
+                get_template_part('template-parts/home/content-hp', 'gallery');
+                get_template_part('template-parts/home/content-hp', 'breaker');
+                get_template_part('template-parts/home/content-hp', 'blog');
+                get_template_part('template-parts/home/content-hp', 'contact');
 
 			endwhile; // End of the loop.
 			?>
