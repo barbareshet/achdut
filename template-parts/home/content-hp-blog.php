@@ -6,90 +6,48 @@
         </div>
     </div>
     <div class="row">
+        <?php
+            $args = array(
+                'posts_per_page'    => 4,
+                'orderby'           => 'date',
+                'order'             =>  'DESC'
+            );
+            $hp_posts_query = new WP_Query($args);
+
+            if($hp_posts_query->have_posts() ):
+
+            while( $hp_posts_query->have_posts() ): $hp_posts_query->the_post();?>
+
         <div class="col-md-3 col-sm-6 col-xs-12 blog-item">
             <div class="thumbnail">
+                <?php if(has_post_thumbnail($post->id)):?>
                 <div class="image-wrap text-center">
-                    <img src="http://placehold.it/250x150" alt="">
+                    <?php the_post_thumbnail();?>
                 </div>
+                <?php else:?>
+                    <div class="image-wrap text-center">
+                        <img src="http://placehold.it/250x150" alt="<?php the_title($post->id);?>">
+                    </div>
+                <?php endif;?>
                 <div class="text-wrap">
-                    <h4 class="post-title">title</h4>
+                    <h4 class="post-title"><?php the_title($post->id);?></h4>
                     <div class="post-info">
-                        <span class="posted push-left">01/01/2017</span>
-                        <span class="author push-right">Author</span>
+                        <span class="posted push-left"><?php the_date($post->id);?></span>,
+                        <span class="author push-right"><?php the_author($post->id);?></span>
                     </div>
                     <hr class="divider">
                     <div class="post-excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores cum, deserunt dicta esse itaque libero molestiae officia tenetur totam vero, vitae? Aspernatur consequuntur cumque cupiditate harum libero natus perspiciatis quos soluta voluptas voluptatem.
+                        <?php the_excerpt();?>
                     </div>
                     <div class="read-more-wrap">
-                        <a href="single.html" class="btn btn-default">read more &raquo;</a>
+                        <a href="<?php the_permalink($post->id);?>" class="btn btn-default">read more &raquo;</a>
                     </div>
                 </div>
             </div><!--/.thumbnail-->
         </div><!--/.blog-item-->
-        <div class="col-md-3 col-sm-6 col-xs-12 blog-item">
-            <div class="thumbnail">
-                <div class="image-wrap text-center">
-                    <img src="http://placehold.it/250x150" alt="">
-                </div>
-                <div class="text-wrap">
-                    <h4 class="post-title">title</h4>
-                    <div class="post-info">
-                        <span class="posted push-left">01/01/2017</span>
-                        <span class="author push-right">Author</span>
-                    </div>
-                    <hr class="divider">
-                    <div class="post-excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores cum, deserunt dicta esse itaque libero molestiae officia tenetur totam vero, vitae? Aspernatur consequuntur cumque cupiditate harum libero natus perspiciatis quos soluta voluptas voluptatem.
-                    </div>
-                    <div class="read-more-wrap">
-                        <a href="single.html" class="btn btn-default">read more &raquo;</a>
-                    </div>
-                </div>
-            </div><!--/.thumbnail-->
-        </div><!--/.blog-item-->
-        <div class="col-md-3 col-sm-6 col-xs-12 blog-item">
-            <div class="thumbnail">
-                <div class="image-wrap text-center">
-                    <img src="http://placehold.it/250x150" alt="">
-                </div>
-                <div class="text-wrap">
-                    <h4 class="post-title">title</h4>
-                    <div class="post-info">
-                        <span class="posted push-left">01/01/2017</span>
-                        <span class="author push-right">Author</span>
-                    </div>
-                    <hr class="divider">
-                    <div class="post-excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores cum, deserunt dicta esse itaque libero molestiae officia tenetur totam vero, vitae? Aspernatur consequuntur cumque cupiditate harum libero natus perspiciatis quos soluta voluptas voluptatem.
-                    </div>
-                    <div class="read-more-wrap">
-                        <a href="single.html" class="btn btn-default">read more &raquo;</a>
-                    </div>
-                </div>
-            </div><!--/.thumbnail-->
-        </div><!--/.blog-item-->
-        <div class="col-md-3 col-sm-6 col-xs-12 blog-item">
-            <div class="thumbnail">
-                <div class="image-wrap text-center">
-                    <img src="http://placehold.it/250x150" alt="">
-                </div>
-                <div class="text-wrap">
-                    <h4 class="post-title">title</h4>
-                    <div class="post-info">
-                        <span class="posted push-left">01/01/2017</span>
-                        <span class="author push-right">Author</span>
-                    </div>
-                    <hr class="divider">
-                    <div class="post-excerpt">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto asperiores cum, deserunt dicta esse itaque libero molestiae officia tenetur totam vero, vitae? Aspernatur consequuntur cumque cupiditate harum libero natus perspiciatis quos soluta voluptas voluptatem.
-                    </div>
-                    <div class="read-more-wrap">
-                        <a href="single.html" class="btn btn-default">read more &raquo;</a>
-                    </div>
-                </div>
-            </div><!--/.thumbnail-->
-        </div><!--/.blog-item-->
+                <?php wp_reset_query();
+            endwhile;
+        endif;?>
 
     </div><!--/.row-->
     <div class="row">
