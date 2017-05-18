@@ -45,7 +45,8 @@ function achdut_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'achdut' ),
-		'onepage'=> esc_html__('HomePage', 'achdut')
+		'onepage'=> esc_html__('HomePage', 'achdut'),
+		'footer'=> esc_html__('Footer', 'achdut')
 	) );
 
 	/*
@@ -107,6 +108,52 @@ function achdut_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Events Sidebar', 'achdut' ),
+        'id'            => 'sidebar-events',
+        'description'   => esc_html__( 'Add widgets here.', 'achdut' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Left Sidebar', 'achdut' ),
+        'id'            => 'sidebar-footer-left',
+        'description'   => esc_html__( 'Add widgets here.', 'achdut' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4><hr class="under-widget-title"> ',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Left 2 Sidebar', 'achdut' ),
+        'id'            => 'sidebar-footer-left-2',
+        'description'   => esc_html__( 'Add widgets here.', 'achdut' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4><hr class="under-widget-title"> ',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Right 2 Sidebar', 'achdut' ),
+        'id'            => 'sidebar-footer-right-2',
+        'description'   => esc_html__( 'Add widgets here.', 'achdut' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4><hr class="under-widget-title"> ',
+    ) );
+    register_sidebar( array(
+        'name'          => esc_html__( 'Footer Right Sidebar', 'achdut' ),
+        'id'            => 'sidebar-footer-right',
+        'description'   => esc_html__( 'Add widgets here.', 'achdut' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4><hr class="under-widget-title"> ',
+    ) );
+
 }
 add_action( 'widgets_init', 'achdut_widgets_init' );
 
@@ -220,8 +267,8 @@ function themeInit()
 	}
 
 	//acf fields and options
-	include_once(get_template_directory() . '/inc/plugins/acf-repeater-editor-accordion/acf-repeater-accordion.php');
-	include_once(get_template_directory() . '/inc/plugins/sliders-fields/acf-sliders.php');
+	include_once( get_template_directory() . '/inc/plugins/acf-repeater-editor-accordion/acf-repeater-accordion.php');
+	include_once( get_template_directory() . '/inc/plugins/sliders-fields/acf-sliders.php');
 }
 
 themeInit();
@@ -230,7 +277,20 @@ themeInit();
  *
  * Require Post Types
  */
-require_once (get_template_directory() . '/inc/post_types/ceremonies_post_type.php');
-require_once (get_template_directory() . '/inc/post_types/events_post_type.php');
-require_once (get_template_directory() . '/inc/post_types/team_post_type.php');
-require_once (get_template_directory() . '/inc/post_types/video_post_type.php');
+require_once ( get_template_directory() . '/inc/post_types/ceremonies_post_type.php');
+require_once ( get_template_directory() . '/inc/post_types/events_post_type.php');
+require_once ( get_template_directory() . '/inc/post_types/team_post_type.php');
+require_once ( get_template_directory() . '/inc/post_types/video_post_type.php');
+
+
+
+/*
+ * Allow Sidebar to show shortcodes
+ */
+add_filter('widget_text','do_shortcode');
+
+/*
+ *
+ * Require Shortcodes
+ */
+require_once ( get_template_directory() . '/inc/shorcodes/events_shortcode.php');

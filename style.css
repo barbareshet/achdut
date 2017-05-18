@@ -191,3 +191,39 @@ header #top-bar {
     left: 0; }
 
 /* Fonts*/
+
+.single-events #event-information,
+.single-events #event-information a{
+    color: #fff;
+    font-size:18px;
+}
+.upcoming-list{
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+.upcoming-list .coming-event{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+.upcoming-list .coming-event small{
+    font-size: 14px;
+}
+
+.footer-widget ul{
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+}
+.footer-widget ul li{
+    
+}
+.footer-widget ul li a{
+    color: #fff;
+    text-transform: capitalize;
+}
+
+footer .site-info a{
+    color: #fff;
+}

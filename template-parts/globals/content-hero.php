@@ -19,11 +19,29 @@ if ( is_home() && ! is_front_page() ) : ?>
                 <h1 id="page-title">
                     <?php the_title();?>
                 </h1>
-                <div class="row inner-row">
-                    <div class="col-md-3 location">
-                        <i class="fa fa-map-marker fa-5x"></i>
+                <div class="row inner-row" id="event-information">
+                    <div class="col-md-4 col-xs-4 location">
+                        <i class="fa fa-map-marker fa-3x"></i>
                         <!-- /.fa fa-map-marker fa-x5 -->
-                        <div>Location</div>
+                        <div>
+                            <?php the_field('event_location');?>
+                        </div>
+                    </div>
+                    <!-- /.col-md-3 location -->
+                    <div class="col-md-4 col-xs-4 time">
+                        <i class="fa fa-clock-o fa-3x"></i>
+                        <!-- /.fa fa-map-marker fa-x5 -->
+                        <div>
+                            <?php the_field('event_date');?>
+                        </div>
+                    </div>
+                    <!-- /.col-md-3 location -->
+                    <div class="col-md-4 col-xs-4 directions">
+                        <i class="fa fa-location-arrow fa-3x"></i><br>
+                        <!-- /.fa fa-map-marker fa-x5 -->
+                        <a href="<?php the_field('event_get_directions');?>" target="_blank">
+                            Get Directions
+                        </a>
                     </div>
                     <!-- /.col-md-3 location -->
                 </div>

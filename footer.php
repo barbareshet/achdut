@@ -16,60 +16,50 @@
 	<footer id="site-footer" class="site-footer" role="contentinfo">
         <nav class="navbar navbar-inverse">
             <div class="container">
-
+                <?php get_template_part('template-parts/globals/content', 'nav-bottom');?>
             </div>
         </nav>
         <div class="container">
 
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12 footer-widget">
-                    <h4>Recent Posts</h4>
-                    <div class="widget-content">
-                        <ul id="recent-posts">
-                            <li>post</li>
-                            <li>post</li>
-                            <li>post</li>
-                            <li>post</li>
-                            <li>post</li>
-                        </ul>
-                    </div>
+                    <?php if(is_active_sidebar('sidebar-footer-left')){
+                            dynamic_sidebar('sidebar-footer-left');
+                        }
+                    ?>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 footer-widget">
-                    <h4>List Categories</h4>
-                    <div class="widget-content">
-                        <ul id="list-cat">
-                            <li>cat</li>
-                            <li>cat</li>
-                            <li>cat</li>
-                            <li>cat</li>
-                            <li>cat</li>
-                        </ul>
-                    </div>
+                    <?php if(is_active_sidebar('sidebar-footer-left-2')){
+                        dynamic_sidebar('sidebar-footer-left-2');
+                    }
+                    ?>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 footer-widget">
-                    <h4>Upcoming Events</h4>
-                    <div class="widget-content">
-                        <ul id="upcoming">
-                            <li>event</li>
-                            <li>event</li>
-                            <li>event</li>
-                            <li>event</li>
-                            <li>event</li>
-                        </ul>
-                    </div>
+                    <?php if(is_active_sidebar('sidebar-footer-right-2')){
+                        dynamic_sidebar('sidebar-footer-right-2');
+                    }
+                    ?>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 footer-widget">
-                    <h4>Contact Info</h4>
-                    <div class="widget-content">
-
-                    </div>
+                    <?php if(is_active_sidebar('sidebar-footer-right')){
+                        dynamic_sidebar('sidebar-footer-right');
+                    }
+                    ?>
                 </div>
             </div>
         </div>
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'achdut' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'achdut' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'achdut' ), 'achdut', '<a href="https://automattic.com/" rel="designer">Ido Barnea</a>' ); ?>
+		<div class="site-info container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <a href="<?php echo esc_url( __( home_url(), 'achdut' ) ); ?>" rel="nofollow"><?php printf( esc_html__( 'All Rights Reserved %s', 'achdut' ), 'Achdut Israel' ); ?></a>
+                    <span class="sep"> | </span>
+                    <?php if(is_front_page()):?>
+                    <?php printf( esc_html__( '%1$s.', 'achdut' ), '<a href="http://www.barbareshet.co.il" rel="nofollow" target="_blank">Theme Design & Development by Ido Web Services</a>' ); ?>
+                    <?php else:?>
+                        <?php printf( esc_html__( '%1$s.', 'achdut' ), 'Theme Design & Development by Ido Web Services' ); ?>
+                    <?php endif;?>
+                </div>
+            </div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

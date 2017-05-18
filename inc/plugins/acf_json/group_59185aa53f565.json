@@ -66,6 +66,24 @@
             "disabled": 0
         },
         {
+            "key": "field_591d19c2dc5eb",
+            "label": "event content",
+            "name": "event_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
             "key": "field_5918afce7ee29",
             "label": "event date",
             "name": "event_date",
@@ -107,6 +125,27 @@
             "placeholder": "",
             "disabled": 0,
             "readonly": 0
+        },
+        {
+            "key": "field_591d16b59f4bb",
+            "label": "event get directions",
+            "name": "event_get_directions",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
         }
     ],
     "location": [
@@ -135,5 +174,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1494791533
+    "modified": 1495079403
 }
