@@ -39,7 +39,7 @@ function ceremonies_post_type() {
         'label'                 => __( 'Ceremonies', 'achdut' ),
         'description'           => __( 'Ceremony Description', 'achdut' ),
         'labels'                => $labels,
-        'supports'              => array('title','thumbnail' ),
+        'supports'              => array('title','thumbnail' , 'editor'),
         'taxonomies'            => array(),
         'hierarchical'          => false,
         'public'                => true,

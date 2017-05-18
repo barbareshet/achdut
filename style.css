@@ -227,3 +227,7 @@ header #top-bar {
 footer .site-info a{
     color: #fff;
 }
+.ceremonies.ceremony{
+    margin-top: 10px;
+    min-height: 350px;
+}
