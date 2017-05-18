@@ -242,7 +242,15 @@
         });
 
     //Add Active Class To Main menu item
+        //general
         $('li.current_page_item').addClass('active');
+
+        //post type related
+        //events and activities
+        if($('body').hasClass('single-events')){
+                console.log('body');
+            $('#main-menu').find('a:contains("activities")').parent().addClass('active');
+        }
 
 
 })(jQuery);
