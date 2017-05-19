@@ -1,49 +1,69 @@
 <div class="container" id="gallery">
     <div class="row">
         <div class="col-sm-12 text-center section-title-wrap">
-            <h2 class="section-title">Gallery</h2>
+            <h2 class="section-title"><?php the_field('gallery_section_title');?></h2>
+            <div class="gallery-section-desc">
+                <?php the_field('gallery_section_desc');?>
+            </div>
             <hr class="divider">
         </div>
-        <div class="col-md-6 col-sm-12 gal-img">
-            <img src="http://placehold.it/550x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img -->
-        <div class="col-md-6 col-sm-12 gal-img">
-            <img src="http://placehold.it/550x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img TopRow-->
-        <div class="col-md-4 col-sm-12 gal-img">
-            <img src="http://placehold.it/355x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img -->
-        <div class="col-md-4 col-sm-12 gal-img">
-            <img src="http://placehold.it/355x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img -->
-        <div class="col-md-4 col-sm-12 gal-img">
-            <img src="http://placehold.it/355x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img MiddleRow-->
-        <div class="col-md-3 col-sm-12 gal-img">
-            <img src="http://placehold.it/257x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img TopRow-->
-        <div class="col-md-3 col-sm-12 gal-img">
-            <img src="http://placehold.it/257x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img -->
-        <div class="col-md-3 col-sm-12 gal-img">
-            <img src="http://placehold.it/257x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img -->
-        <div class="col-md-3 col-sm-12 gal-img">
-            <img src="http://placehold.it/257x250" alt="">
-        </div>
-        <!-- /.col-md-6 col-sm-12 gal-img BottomRow-->
+    </div>
+    <div class="row" id="hp-gallery">
+
+        <?php
+
+        $images = get_field('home_page_gallery');
+
+        if( $images ): ?>
+
+
+                <?php  $i = 0;
+                    foreach( $images as $image ):
+                       switch ($i){
+                           case 0:
+                               $class = 'col-md-6';
+                               break;
+                           case 1:
+                               $class = 'col-md-6';
+                               break;
+                           case 2:
+                               $class = 'col-md-4';
+                               break;
+                           case 3:
+                               $class = 'col-md-4';
+                               break;
+                           case 4:
+                               $class = 'col-md-4';
+                               break;
+                           case 5:
+                               $class = 'col-md-3';
+                               break;
+                           case 6:
+                               $class = 'col-md-3';
+                               break;
+                           case 7:
+                               $class = 'col-md-3';
+                               break;
+                           case 9:
+                               $class = 'col-md-3';
+                               break;
+                           case 9:
+                               $i = 0;
+                               break;
+
+                       } ?>
+                    <div class="<?php echo $class . ' count-'. $i;?> col-sm-12 hp-gallery-image-wrap">
+                      <img class="img-responsive hp-gallery-image" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    </div>
+                <?php $i++;
+
+                endforeach; ?>
+
+        <?php endif; ?>
     </div>
     <div class="row">
         <div class="col-sm-12 text-center btn-wrap">
-            <a href="" class="btn btn-default btn-readmore">Other Events</a>
+            <a href="<?php the_field('gallery_content_btn_link');?>" class="btn btn-default btn-readmore"><?php the_field('gallery_content_btn_text');?></a>
         </div>
         <!-- /.col-sm-12 text-center btn-wrap -->
     </div>

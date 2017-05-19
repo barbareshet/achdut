@@ -28,7 +28,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12 text-center btn-wrap">
-			<a href="all-events.html" class="btn btn-default btn-readmore">Other Events</a>
+			<a href="<?php the_field('ceremonies_content_btn_link');?>" class="btn btn-default btn-readmore"><?php the_field('ceremonies_content_btn_text');?></a>
 		</div>
 		<!-- /.col-sm-12 text-center btn-wrap -->
 	</div>

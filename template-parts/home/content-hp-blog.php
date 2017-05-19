@@ -40,7 +40,7 @@
                         <?php the_excerpt();?>
                     </div>
                     <div class="read-more-wrap">
-                        <a href="<?php the_permalink($post->id);?>" class="btn btn-default">read more &raquo;</a>
+                        <a href="<?php the_permalink();?>" class="btn btn-default">read more &raquo;</a>
                     </div>
                 </div>
             </div><!--/.thumbnail-->

@@ -45,7 +45,7 @@
             <?php endif;?>
 		</div><!-- /.col-sm-12 -->
 		<div class="col-sm-12 text-center">
-			<a href="" class="btn btn-default btn-readmore">See All Events</a>
+			<a href="<?php the_field('events_content_btn_link');?>" class="btn btn-default btn-readmore"><?php the_field('events_content_btn_text');?></a>
 		</div>
 		<!-- /.col-sm-12 text-center -->
 	</div>
