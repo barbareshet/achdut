@@ -274,3 +274,6 @@ footer .site-info a{
     min-height: 350px;
 }
 
+.blog article.col-sm-6.blog-post{
+    min-height:460px;
+}
