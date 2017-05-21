@@ -78,7 +78,9 @@ header #top-bar {
 #hero {
     background: url("https://visualhunt.com/photos/l/4/synagogue-jewish-history-architecture-traditional.jpg") no-repeat center center;
     background-size: cover;
-    height: 450px; }
+    height: 450px;
+    margin-bottom: 15px;
+}
 
 #hero #page-title, #hero #post-title {
     text-transform: capitalize;
@@ -91,7 +93,7 @@ header #top-bar {
 #hero .title-wrap {
     position: absolute;
     max-width: 1150px;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
 }
 .hp-gallery-image-wrap{

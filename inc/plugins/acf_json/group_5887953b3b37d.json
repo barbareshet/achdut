@@ -3,11 +3,11 @@
     "title": "Page Gallery",
     "fields": [
         {
-            "key": "field_588796feae1a4",
-            "label": "moving gallery",
-            "name": "moving_gallery",
-            "type": "gallery",
-            "instructions": "Add Images Here",
+            "key": "field_59211fa7c4b8b",
+            "label": "gallery page content",
+            "name": "gallery_page_content",
+            "type": "wysiwyg",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,17 +15,10 @@
                 "class": "",
                 "id": ""
             },
-            "min": "",
-            "max": "",
-            "preview_size": "full",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
         }
     ],
     "location": [
@@ -33,7 +26,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-photo-gallery.php"
+                "value": "page-galleries.php"
             }
         ]
     ],
@@ -45,8 +38,6 @@
     "hide_on_screen": [
         "the_content",
         "excerpt",
-        "discussion",
-        "comments",
         "revisions",
         "slug",
         "author",
@@ -56,5 +47,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1485324341
+    "modified": 1495343190
 }

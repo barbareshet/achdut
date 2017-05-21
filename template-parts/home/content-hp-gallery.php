@@ -17,7 +17,7 @@
         if( $images ): ?>
 
 
-                <?php  $i = 0;
+                <?php  $i = 0; $imax = 9;
                     foreach( $images as $image ):
                        switch ($i){
                            case 0:
@@ -44,7 +44,7 @@
                            case 7:
                                $class = 'col-md-3';
                                break;
-                           case 9:
+                           case 8:
                                $class = 'col-md-3';
                                break;
                            case 9:
@@ -56,7 +56,7 @@
                       <img class="img-responsive hp-gallery-image" src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
                     </div>
                 <?php $i++;
-
+                        if($i == $imax) break;
                 endforeach; ?>
 
         <?php endif; ?>

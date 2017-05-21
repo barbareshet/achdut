@@ -81,11 +81,12 @@
         "discussion",
         "comments",
         "revisions",
+        "slug",
         "author",
         "format",
         "send-trackbacks"
     ],
     "active": 1,
     "description": "",
-    "modified": 1495108484
+    "modified": 1495344756
 }

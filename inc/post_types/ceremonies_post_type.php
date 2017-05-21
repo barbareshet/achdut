@@ -9,8 +9,8 @@
 //Custom Post Types
 function ceremonies_post_type() {
     $labels = array(
-        'name'                  => _x( 'Ceremonies', 'Post Type General Name', 'achdut' ),
-        'singular_name'         => _x( 'Ceremony', 'Post Type Singular Name', 'achdut' ),
+        'name'                  => _x( 'Ceremonies', 'achdut' ),
+        'singular_name'         => _x( 'Ceremony', 'achdut' ),
         'menu_name'             => __( 'Ceremonies', 'achdut' ),
         'name_admin_bar'        => __( 'Ceremonies', 'achdut' ),
         'archives'              => __( 'Ceremonies Archives', 'achdut' ),

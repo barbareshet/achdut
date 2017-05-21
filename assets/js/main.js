@@ -274,4 +274,5 @@
             collapsedHeight: 150,
         }
     );
+
 })(jQuery);
