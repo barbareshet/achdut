@@ -26,7 +26,7 @@
                 </div>
                 <?php else:?>
                     <div class="image-wrap text-center">
-                        <img src="http://placehold.it/250x150" alt="<?php the_title($post->id);?>">
+                        <img src="http://placehold.it/250x165" alt="<?php the_title($post->id);?>">
                     </div>
                 <?php endif;?>
                 <div class="text-wrap">
@@ -52,7 +52,7 @@
     </div><!--/.row-->
     <div class="row">
         <div class="col-sm-12 text-center btn-wrap">
-            <a href="blog.html" class="btn btn-default btn-readmore">All posts</a>
+            <a href="<?php the_field('blog_content_btn_link');?>" class="btn btn-default btn-readmore"><?php the_field('blog_content_btn_text');?></a>
         </div>
         <!-- /.col-sm-12 text-center btn-wrap -->
     </div>

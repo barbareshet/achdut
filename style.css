@@ -96,7 +96,7 @@ header #top-bar {
 
 /* Layouts */
 #hero {
-    background: url("https://visualhunt.com/photos/l/4/synagogue-jewish-history-architecture-traditional.jpg") no-repeat center center;
+    background: url("assets/img/AdobeStock_56249320_Preview.jpeg") no-repeat center center;
     background-size: cover;
     height: 450px;
     margin-bottom: 15px;
@@ -148,9 +148,9 @@ header #top-bar {
 }
 .breaker {
     min-height: 200px;
-    background-color: #dddddd;
+    background-color: #9cbbd3;
     color: #333;
-    border-bottom: 3px solid #333333;
+    border-bottom: 3px solid navy;
     padding: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -159,9 +159,42 @@ header #top-bar {
     margin-top: 30px;
     margin-bottom: 15px;
 }
-
+a.btn,
+a.btn:hover,
+a.btn:visited{
+    color: #fff;
+}
+.btn-default{
+    background: #9cbbd3;
+}
+#activities .event a.btn:before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    right: -10px;
+    transform: rotate(45deg);
+    top:-12px;
+}
+#activities .event a.btn:after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    position: absolute;
+    right: -10px;
+    transform: rotate(45deg);
+    bottom: -12px;
+}
+#activities .event a.btn{
+    border-radius: 0;
+    overflow: hidden;
+}
 #activities .event .thumbnail {
-    border: 5px solid #333333;
+    border: 5px solid navy;
     color: #333;
     border-radius: 0;
     padding: 7px;
@@ -183,8 +216,9 @@ header #top-bar {
     right: 25px;
     bottom: 35px; }
 
-#activities .event .thumbnail:hover {
-    background: #ddd; }
+/*#activities .event .thumbnail:hover {*/
+    /*box-shadow: ;*/
+/*}*/
 
 #events-option-2 .inner-row,
 #events .inner-row{
@@ -235,7 +269,17 @@ header #top-bar {
 .btn-readmore{
     text-transform: capitalize;
 }
-
+#hp-blog .blog-item .thumbnail{
+    min-height:600px;
+}
+#hp-blog .blog-item .thumbnail .read-more-wrap{
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+}
+#contact-info .fa{
+    color: #9cbbd3;
+}
 /* Media*/
 /*Plugins*/
 .slick-slider img {

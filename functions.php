@@ -298,3 +298,48 @@ add_filter('widget_text','do_shortcode');
  * Require Shortcodes
  */
 require_once ( get_template_directory() . '/inc/shorcodes/events_shortcode.php');
+
+
+function google_map_style(){
+    if( is_front_page() || is_page_template('page-contact.php')){
+    ob_start();?>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+<?php
+
+
+        echo ob_get_clean();
+    }
+}
+function google_map_script(){
+    if(is_front_page() || is_page_template('page-contact.php')){
+    ob_start();?>
+    <script>
+        function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxyb9B9Pm4trm274jgeSECAgAvLrdHQc0&callback=initMap">
+    </script>
+<?php
+
+
+        echo ob_get_clean();
+    }
+}
+
+add_action('wp_head', 'google_map_style');
+add_action('wp_footer', 'google_map_script');

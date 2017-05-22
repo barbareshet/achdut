@@ -20,6 +20,9 @@
         <?php endif;?>
 
     </div>
+
+</div>
+<div class="container-fluid" id="hp-map">
     <div class="row">
         <div class="col-sm-12" id="map"></div>
     </div>

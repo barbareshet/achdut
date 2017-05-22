@@ -3,8 +3,7 @@
         'theme_location' => 'footer',
         'menu_id' => 'footer-menu',
         'menu_class' => 'nav navbar-nav nav-menu',
-        'before_menu'   => '<div col-md-8 col-sm-12 text-center>',
-        'after_menu'    =>  '</div>'
+        'container_class'   => 'col-md-8 col-md-offset-2 col-sm-12 text-center'
     )
 );
 ?>

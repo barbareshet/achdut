@@ -715,27 +715,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_591da06cfcdea",
-            "label": "blog content btn text",
-            "name": "blog_content_btn_text",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
-        },
-        {
             "key": "field_591932c6c35ff",
             "label": "blog section title",
             "name": "blog_section_title",
@@ -749,6 +728,27 @@
                 "id": ""
             },
             "default_value": "Recent Posts",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_591da06cfcdea",
+            "label": "blog content btn text",
+            "name": "blog_content_btn_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -911,5 +911,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1495180608
+    "modified": 1495429128
 }

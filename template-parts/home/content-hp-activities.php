@@ -18,7 +18,7 @@
 					<li class="place">Place</li>
 					<li class="time">20:00</li>
 				</ul>
-				<a href="" class="btn btn-default btn-event">See More</a>
+				<a href="<?php the_permalink($activity->ID);?>" class="btn btn-info btn-event">See More</a>
 			</div>
 		</div><!--/.event-->
 		            <?php $a++;
@@ -28,7 +28,7 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-12 text-center btn-wrap">
-			<a href="<?php the_field('ceremonies_content_btn_link');?>" class="btn btn-default btn-readmore"><?php the_field('ceremonies_content_btn_text');?></a>
+			<a href="<?php the_field('ceremonies_content_btn_link');?>" class="btn btn-primary btn-readmore"><?php the_field('ceremonies_content_btn_text');?></a>
 		</div>
 		<!-- /.col-sm-12 text-center btn-wrap -->
 	</div>
