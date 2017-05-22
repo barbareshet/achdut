@@ -11,8 +11,14 @@ if ( is_home() && ! is_front_page() ) : ?>
         </div>
     </div>
 </section>
-<?php elseif( is_singular('events') ) :?>
-<section id="hero" class="page-hero">
+<?php elseif( is_singular('events') ) :
+    $e_bg = get_the_post_thumbnail_url();?>
+    <?php if($e_bg):?>
+        <section id="hero" class="page-hero event-hero" style="background: url('<?php echo $e_bg;?>') no-repeat center center; background-size: cover;">
+    <?php else:?>
+        <section id="hero" class="page-hero">
+
+    <?php endif;?>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 title-wrap text-center">
