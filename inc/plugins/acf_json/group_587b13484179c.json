@@ -4,8 +4,24 @@
     "fields": [
         {
             "key": "field_587c7a467ceed",
-            "label": "about benefits section title",
-            "name": "about_benefits_section_title",
+            "label": "about section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_587b1405a504c",
+            "label": "about section title",
+            "name": "about_section_title",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -24,10 +40,10 @@
             "disabled": 0
         },
         {
-            "key": "field_587b1405a504c",
-            "label": "about benefits",
-            "name": "about_benefits",
-            "type": "repeater",
+            "key": "field_5922e28ed366b",
+            "label": "founders section",
+            "name": "",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,79 +52,214 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5922e2a7d366c",
+            "label": "founders section title",
+            "name": "founders_section_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5922e2b7d366d",
+            "label": "founders section content",
+            "name": "founders_section_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5922e262d366a",
+            "label": "founders section image",
+            "name": "founders_section_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5922e34d237f3",
+            "label": "management section",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5922e35a237f4",
+            "label": "management section title",
+            "name": "management_section_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5922e3ab237f6",
+            "label": "management section members",
+            "name": "management_section_members",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "members"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "post_type"
+            ],
+            "elements": [
+                "featured_image"
+            ],
             "min": "",
             "max": "",
-            "layout": "row",
-            "button_label": "Add Row",
-            "sub_fields": [
-                {
-                    "key": "field_587b1421a504d",
-                    "label": "about benefits icon",
-                    "name": "about_benefits_icon",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_587b1444a504e",
-                    "label": "about benefits title",
-                    "name": "about_benefits_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
-                },
-                {
-                    "key": "field_587b1453a504f",
-                    "label": "about benefits description",
-                    "name": "about_benefits_description",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "new_lines": "wpautop",
-                    "readonly": 0,
-                    "disabled": 0
-                }
-            ]
+            "return_format": "object"
+        },
+        {
+            "key": "field_5922e41ed5bd1",
+            "label": "future section",
+            "name": "_copy",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5922e435d5bd2",
+            "label": "future section title",
+            "name": "future_section_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5922e469d5bd5",
+            "label": "future section content",
+            "name": "future_section_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5922e44ad5bd3",
+            "label": "future section image",
+            "name": "future_section_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -116,7 +267,7 @@
             {
                 "param": "page",
                 "operator": "==",
-                "value": "5"
+                "value": "6"
             }
         ]
     ],
@@ -138,5 +289,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1484552810
+    "modified": 1495458950
 }

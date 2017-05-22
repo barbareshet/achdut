@@ -1,6 +1,6 @@
 <?php
 /**
- * template Name: Activities Page
+ * template Name: About Page
  *
  * The template for displaying Home Page
  *
@@ -21,18 +21,20 @@ get_header(); ?>
             <div class="container" id="about">
                 <div class="row">
                     <div class="col-sm-12 text-center section-title-wrap">
-                        <h2 class="section-title">About The Association</h2>
+                        <h2 class="section-title"><?php the_field('about_section_title');?></h2>
                     </div>
-                    <div class="col-sm-12 text-wrap">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet, aperiam at autem cupiditate distinctio et hic illum ipsa ipsum iste laborum molestias neque, nihil quasi quod rem repudiandae rerum, sed sequi totam vero voluptate voluptatibus. Alias architecto aspernatur assumenda at atque consequuntur cumque dolorum ea eaque earum enim esse eum incidunt ipsum iure labore maxime molestias pariatur praesentium quibusdam quis, quod, recusandae repellendus rerum veritatis vero voluptatibus. Adipisci dicta dolorem doloremque dolores dolorum enim error ex impedit, laborum maxime molestiae necessitatibus nemo nostrum numquam provident quaerat, quidem ratione recusandae, rem reprehenderit repudiandae sed sunt suscipit unde ut vel velit vero voluptate voluptatem voluptatum! Accusamus aliquam blanditiis deserunt dignissimos dolore doloremque eaque enim eos est facilis illo incidunt ipsa iusto labore laboriosam laudantium magni minus necessitatibus nostrum numquam officia optio porro praesentium quam qui quia, quibusdam sequi sunt tenetur vel veritatis voluptas voluptate voluptatum. Ad asperiores eaque nisi, officia sed vero. A accusantium adipisci aliquam animi aspernatur beatae commodi consequatur cum debitis, dolorum eaque eius et incidunt inventore ipsa ipsum laboriosam magnam molestiae molestias nam natus necessitatibus, neque odio odit officia officiis pariatur perferendis qui quia quo quod quos rem reprehenderit repudiandae sapiente tempora ullam. Ab assumenda aut beatae debitis deleniti, dolores dolorum ea exercitationem expedita ipsam laborum minus, mollitia nostrum placeat quod recusandae sint tempora vel! Ad assumenda atque aut autem commodi consectetur debitis deserunt dignissimos dolor doloribus dolorum, ducimus et hic id ipsum iusto magnam minima minus neque, perspiciatis porro quasi qui quod recusandae repellendus unde vel. Harum.</p>
-                    </div>
+                <?php if( have_posts() ){
+                        while ( have_posts() ) : the_post();
+                        get_template_part('template-parts/content', 'page-about');
+                        endwhile;
+                };?>
                 </div>
             </div><!--/#about-->
             <hr class="divider">
             <div class="container" id="founders">
                 <div class="row">
                     <div class="col-sm-12 text-center section-title-wrap">
-                        <h2 class="section-title">About The Founders</h2>
+                        <h2 class="section-title"><?php the_field('founders_section_title');?></h2>
                     </div>
                     <div class="col-sm-12 text-wrap">
                         <div class="row inner-row">
@@ -53,7 +55,7 @@ get_header(); ?>
             <div class="container" id="management">
                 <div class="row">
                     <div class="col-sm-12 text-center section-title-wrap">
-                        <h2 class="section-title">Managements</h2>
+                        <h2 class="section-title"><?php the_field('management_section_title');?></h2>
                     </div>
                 </div>
                 <div class="row">
@@ -156,7 +158,7 @@ get_header(); ?>
             <div class="container" id="future-plans">
                 <div class="row">
                     <div class="col-sm-12 text-center section-title-wrap">
-                        <h2 class="section-title">Futuere Plans</h2>
+                        <h2 class="section-title"><?php the_field('future_section_title');?></h2>
                     </div>
                     <div class="col-sm-12 text-wrap">
                         <div class="row inner-row">

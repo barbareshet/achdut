@@ -5,8 +5,8 @@
 			<hr class="divider">
 		</div>
 		<div class="col-md-6 col-sm-12 image-wrap">
-            <?$heritage_image = get_field('heritage_image');?>
-			<img src="http://placehold.it/450x450" alt="synagouge" class="img-responsive">
+            <?php $heritage_image = get_field('heritage_image');?>
+			<img src="<?php echo $heritage_image['url'];?>" alt="<?php echo $heritage_image['alt'];?>" class="img-responsive">
 		</div><!-- /.col- md-6 col-sm-12 image-wrap -->
 		<div class="col-md-6 col-sm-12 text">
             <?php the_field('heritage_content');?>
