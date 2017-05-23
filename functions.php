@@ -68,6 +68,7 @@ function achdut_setup() {
 //	add_image_size('hero-image', 1920, 500, true);
 	add_image_size('post-main', 550, 150, true);
 	add_image_size('event-small', 350, 200, true);
+	add_image_size('team-member', 480, 640, true);
 
 
 

@@ -159,8 +159,8 @@
             "key": "field_5922e3ab237f6",
             "label": "management section members",
             "name": "management_section_members",
-            "type": "relationship",
-            "instructions": "",
+            "type": "number",
+            "instructions": "number of posts to show.\r\ndefault is all members",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -168,19 +168,15 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "members"
-            ],
-            "taxonomy": [],
-            "filters": [
-                "post_type"
-            ],
-            "elements": [
-                "featured_image"
-            ],
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
             "min": "",
             "max": "",
-            "return_format": "object"
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
         },
         {
             "key": "field_5922e41ed5bd1",
@@ -289,5 +285,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1495458950
+    "modified": 1495513410
 }

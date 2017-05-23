@@ -29,7 +29,7 @@ body {
     border: none; }
 
 #site-footer {
-    height: 250px;
+    min-height: 250px;
     background-color: #333333;
     color: #fff; }
 

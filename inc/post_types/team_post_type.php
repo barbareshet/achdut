@@ -39,7 +39,7 @@ function member_post_type() {
         'label'                 => __( 'members', 'achdut' ),
         'description'           => __( 'member Description', 'achdut' ),
         'labels'                => $labels,
-        'supports'              => array('title' ),
+        'supports'              => array('title','thumbnail', 'editor'),
         'taxonomies'            => array(),
         'hierarchical'          => false,
         'public'                => true,

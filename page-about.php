@@ -61,94 +61,20 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="row inner-row slider-row" id="team">
-                            <div class="col-md-4 col-sm-6 col-xs-12 team-member">
-                                <div class="thumbnail no-border">
-                                    <div class="tm-image text-center">
-                                        <img src="http://placehold.it/200x200" alt="tm-1" class="img-circle">
-                                    </div><!-- /.tm-image -->
-                                    <div class="tm-info">
-                                        <h4 class="tm-title">
-                                            Mr. Jhon Do
-                                            <small>
-                                                title
-                                            </small>
-                                            <div class="tm-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque deserunt dolorem enim ex facere, id maxime, non omnis qui quos reiciendis rem similique sint unde. Consequatur dolorem ea eius enim impedit incidunt ipsum, laboriosam, laudantium numquam officia omnis optio porro quaerat quod repudiandae sapiente similique suscipit totam voluptatem voluptates? Alias, amet aspernatur consectetur error exercitationem fugiat nulla tempora. A architecto aspernatur aut cumque dicta ducimus ea eveniet, exercitationem fugiat iure maiores nulla officia quae quaerat, quam quas qui quia ratione reiciendis voluptas. Ab aspernatur consequatur corporis cupiditate delectus dolores eius error exercitationem harum id laboriosam minus molestias natus nemo odit pariatur reiciendis repellat tempore, vel vitae? Doloremque et, ex fugiat illum maiores nostrum officia, perferendis repellat vel voluptas voluptates.
-                                            </div>
-                                            <!-- /.tm-text -->
-                                        </h4>
-
-                                        <!-- /.tm-title -->
-                                    </div>
-                                    <!-- /.tm-info -->
-                                </div><!-- /.thumbnail -->
-                            </div><!-- /.col-md-4 col-sm-6 col-xs-12 team-member -->
-                            <div class="col-md-4 col-sm-6 col-xs-12 team-member">
-                                <div class="thumbnail no-border">
-                                    <div class="tm-image text-center">
-                                        <img src="http://placehold.it/200x200" alt="tm-1" class="img-circle">
-                                    </div><!-- /.tm-image -->
-                                    <div class="tm-info">
-                                        <h4 class="tm-title">
-                                            Mr. Jhon Do
-                                            <small>
-                                                title
-                                            </small>
-                                            <div class="tm-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque deserunt dolorem enim ex facere, id maxime, non omnis qui quos reiciendis rem similique sint unde. Consequatur dolorem ea eius enim impedit incidunt ipsum, laboriosam, laudantium numquam officia omnis optio porro quaerat quod repudiandae sapiente similique suscipit totam voluptatem voluptates? Alias, amet aspernatur consectetur error exercitationem fugiat nulla tempora. A architecto aspernatur aut cumque dicta ducimus ea eveniet, exercitationem fugiat iure maiores nulla officia quae quaerat, quam quas qui quia ratione reiciendis voluptas. Ab aspernatur consequatur corporis cupiditate delectus dolores eius error exercitationem harum id laboriosam minus molestias natus nemo odit pariatur reiciendis repellat tempore, vel vitae? Doloremque et, ex fugiat illum maiores nostrum officia, perferendis repellat vel voluptas voluptates.
-                                            </div>
-                                            <!-- /.tm-text -->
-                                        </h4>
-
-                                        <!-- /.tm-title -->
-                                    </div>
-                                    <!-- /.tm-info -->
-                                </div><!-- /.thumbnail -->
-                            </div><!-- /.col-md-4 col-sm-6 col-xs-12 team-member -->
-                            <div class="col-md-4 col-sm-6 col-xs-12 team-member">
-                                <div class="thumbnail no-border">
-                                    <div class="tm-image text-center">
-                                        <img src="http://placehold.it/200x200" alt="tm-1" class="img-circle">
-                                    </div><!-- /.tm-image -->
-                                    <div class="tm-info">
-                                        <h4 class="tm-title">
-                                            Mr. Jhon Do
-                                            <small>
-                                                title
-                                            </small>
-                                            <div class="tm-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque deserunt dolorem enim ex facere, id maxime, non omnis qui quos reiciendis rem similique sint unde. Consequatur dolorem ea eius enim impedit incidunt ipsum, laboriosam, laudantium numquam officia omnis optio porro quaerat quod repudiandae sapiente similique suscipit totam voluptatem voluptates? Alias, amet aspernatur consectetur error exercitationem fugiat nulla tempora. A architecto aspernatur aut cumque dicta ducimus ea eveniet, exercitationem fugiat iure maiores nulla officia quae quaerat, quam quas qui quia ratione reiciendis voluptas. Ab aspernatur consequatur corporis cupiditate delectus dolores eius error exercitationem harum id laboriosam minus molestias natus nemo odit pariatur reiciendis repellat tempore, vel vitae? Doloremque et, ex fugiat illum maiores nostrum officia, perferendis repellat vel voluptas voluptates.
-                                            </div>
-                                            <!-- /.tm-text -->
-                                        </h4>
-
-                                        <!-- /.tm-title -->
-                                    </div>
-                                    <!-- /.tm-info -->
-                                </div><!-- /.thumbnail -->
-                            </div><!-- /.col-md-4 col-sm-6 col-xs-12 team-member -->
-                            <div class="col-md-4 col-sm-6 col-xs-12 team-member">
-                                <div class="thumbnail no-border">
-                                    <div class="tm-image text-center">
-                                        <img src="http://placehold.it/200x200" alt="tm-1" class="img-circle">
-                                    </div><!-- /.tm-image -->
-                                    <div class="tm-info">
-                                        <h4 class="tm-title">
-                                            Mr. Jhon Do
-                                            <small>
-                                                title
-                                            </small>
-                                            <div class="tm-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque deserunt dolorem enim ex facere, id maxime, non omnis qui quos reiciendis rem similique sint unde. Consequatur dolorem ea eius enim impedit incidunt ipsum, laboriosam, laudantium numquam officia omnis optio porro quaerat quod repudiandae sapiente similique suscipit totam voluptatem voluptates? Alias, amet aspernatur consectetur error exercitationem fugiat nulla tempora. A architecto aspernatur aut cumque dicta ducimus ea eveniet, exercitationem fugiat iure maiores nulla officia quae quaerat, quam quas qui quia ratione reiciendis voluptas. Ab aspernatur consequatur corporis cupiditate delectus dolores eius error exercitationem harum id laboriosam minus molestias natus nemo odit pariatur reiciendis repellat tempore, vel vitae? Doloremque et, ex fugiat illum maiores nostrum officia, perferendis repellat vel voluptas voluptates.
-                                            </div>
-                                            <!-- /.tm-text -->
-                                        </h4>
-
-                                        <!-- /.tm-title -->
-                                    </div>
-                                    <!-- /.tm-info -->
-                                </div><!-- /.thumbnail -->
-                            </div><!-- /.col-md-4 col-sm-6 col-xs-12 team-member -->
+                            <?php
+                            $args = array(
+                                'post_type'         =>  'members',
+                                'posts_per_page'    =>  get_field('management_section_members') ? get_field('management_section_members') : -1 ,
+                                'orderby'           => 'title',
+                                'order'             => 'DESC'
+                            );
+                            $tm_query = new WP_Query($args);
+                                if( $tm_query->have_posts() ){
+                                    while ( $tm_query->have_posts() ) : $tm_query->the_post();
+                                    get_template_part('template-parts/content', 'page-about-team');
+                                    endwhile;
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>

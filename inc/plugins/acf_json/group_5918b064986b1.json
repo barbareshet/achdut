@@ -1,6 +1,6 @@
 {
     "key": "group_5918b064986b1",
-    "title": "member",
+    "title": "Member",
     "fields": [
         {
             "key": "field_5918b0856d70d",
@@ -49,7 +49,7 @@
             "label": "member desc",
             "name": "member_desc",
             "type": "textarea",
-            "instructions": "",
+            "instructions": "please provide a short description about this person",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -76,13 +76,12 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
         "excerpt",
-        "custom_fields",
         "discussion",
         "comments",
         "revisions",
@@ -96,5 +95,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1494790327
+    "modified": 1495508601
 }
